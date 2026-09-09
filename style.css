@@ -6,14 +6,8 @@ body {
     color: #333;
 }
 
-/* Flex Container to split Sidebar and Content */
-.container {
-    display: flex;
-    min-height: 100vh;
-}
-
 /* Sticky Sidebar styling */
-.sidebar {
+header {
     width: 250px;
     background-color: #ffffff;
     padding: 40px 20px;
@@ -24,28 +18,28 @@ body {
     box-sizing: border-box;
 }
 
-.sidebar h2 {
+header h1 {
     margin-top: 0;
     font-size: 20px;
 }
 
-.sidebar ul {
+header ul {
     list-style: none;
     padding: 0;
 }
 
-.sidebar li {
+header li {
     margin: 15px 0;
 }
 
-.sidebar a {
+header a {
     color: #0076ff;
     text-decoration: none;
     font-weight: 500;
 }
 
 /* Main Content and Sections styling */
-.content {
+main {
     flex: 1;
     padding: 40px;
     max-width: 800px;
@@ -64,15 +58,4 @@ section h2 {
     margin-top: 0;
     border-bottom: 2px solid #0076ff;
     padding-bottom: 10px;
-}
-
-.container > a{
-    flex-shrink: 0;
-    min-width:150px;
-}
-
-.container a img{
-    width: 100%;
-    height: auto;
-    display: block;
 }
