@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kirubel Dula - Profile</title>
+</head>
+
+<body>
+    <header>
+        <h1>Kirubel Dula</h1>
+        <p>Computer Information Technology & Health Informatics Student</p>
+
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About</h2>
+            <p>
+                I am a student at Minnesota State University, Mankato,
+                majoring in Computer Information Technology and Health
+                Informatics. I am interested in technology, business,
+                and learning how technology can be used to solve
+                real-world problems.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML/CSS</li>
+                <li>Information Technology</li>
+                <li>Database Management</li>
+                <li>Networking</li>
+                <li>Health Informatics</li>
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <p>
+                I have experience working on technology projects,
+                web development assignments, and business projects.
+            </p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+
+            <form action="/submit" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone"
+                       pattern="^\d{3}-\d{3}-\d{4}$">
+                <br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"
+                          placeholder="Enter your message here..."></textarea>
+                <br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Kirubel Dula. All rights reserved.</p>
+    </footer>
+</body>
+</html>
