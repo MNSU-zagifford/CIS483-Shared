@@ -49,6 +49,7 @@ body {
     flex: 1;
     padding: 40px;
     max-width: 800px;
+    margin-left: 20px;
 }
 
 section {
@@ -70,7 +71,7 @@ section h2 {
     min-width:150px;
 }
 
-.container > a img{
+.container a img{
     width: 100%;
     height: auto;
     display: block;
