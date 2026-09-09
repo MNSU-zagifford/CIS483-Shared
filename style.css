@@ -64,3 +64,14 @@ section h2 {
     border-bottom: 2px solid #0076ff;
     padding-bottom: 10px;
 }
+
+.container > a{
+    flex-shrink: 0;
+    min-width:150px;
+}
+
+.container > a img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
