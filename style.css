@@ -5,7 +5,10 @@ body {
     background-color: #f9f9f9;
     color: #333;
 }
-
+header {
+    display: flex;
+    justify-content: space-between;
+}
 h1 {
     font-size: 32px;
     margin-bottom: 20px;
