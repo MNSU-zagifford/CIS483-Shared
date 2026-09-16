@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratik Niroula - Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <h1>Pratik Niroula</h1>
+            <p>Computer Science &amp; Information Technology Student</p>
+        </div>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="card">
+            <h2>About Me</h2>
+            <p>
+                I am a student at <strong>Minnesota State University, Mankato</strong> with a strong focus on 
+                <em>software engineering, web development, and cloud technologies</em>. 
+                I enjoy solving complex technical problems, building user-friendly web applications, and collaborating in team environments to deliver high-quality software solutions.
+            </p>
+        </section>
+
+        <section id="skills" class="card">
+            <h2>Technical Skills</h2>
+            <ul class="skills-list">
+                <li>HTML5</li>
+                <li>CSS3 &amp; Flexbox</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Git &amp; GitHub</li>
+                <li>SQL &amp; Database Design</li>
+                <li>Responsive Web Design</li>
+                <li>Web Accessibility (a11y)</li>
+            </ul>
+        </section>
+
+        <section id="experience" class="card">
+            <h2>Experience &amp; Projects</h2>
+            <article>
+                <h3>Web Application Development &mdash; CIS 483</h3>
+                <p><em>Minnesota State University, Mankato (Fall 2026)</em></p>
+                <p>
+                    Collaborating as part of the <strong>Builder Team</strong> to create responsive, accessible, and semantic web pages. Implementing industry-standard version control workflows using Git and GitHub, semantic markup, and responsive CSS styling.
+                </p>
+            </article>
+
+            <article>
+                <h3>Full-Stack &amp; Software Projects</h3>
+                <p>
+                    Developed interactive applications focusing on clean code architecture, intuitive UI design, cross-browser compatibility, and zero-error console standards.
+                </p>
+            </article>
+        </section>
+
+        <section id="contact" class="card">
+            <h2>Contact Me</h2>
+            <form action="/submit" method="post">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required minlength="2" placeholder="Your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required placeholder="name@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="507-123-4567">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required minlength="10" placeholder="Write your message here..."></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Connect with me:</p>
+        <p>
+            <a href="https://github.com/Pratikn03" target="_blank" rel="noopener noreferrer">
+                <img src="images/github-logo.png" alt="GitHub Profile" width="40" height="40">
+            </a>
+        </p>
+        <p>&copy; 2026 Pratik Niroula. All rights reserved.</p>
+        <p><a href="index.html">&larr; Back to Builder Team Page</a></p>
+    </footer>
+
+</body>
+</html>

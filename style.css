@@ -1,99 +1,182 @@
+/* ============================================
+   style.css — CSS in Action, Class Project
+   Open index.html in your browser first, then
+   change any value below, save, and refresh.
+   ============================================ */
+
 body {
-    font-family: "Segoe UI", Roboto, sans-serif;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
+  font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+  background-color: #F9FAFB;
+  color: #1F2937;
+  margin: 0;
+  line-height: 1.5;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 32px;
+  background: #1E3A8A;
+  color: white;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
-h1 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    text-align: center;
+header h1 {
+  margin: 0 0 6px 0;
+  font-size: 2rem;
+  color: white;
 }
 
-/* Flex Container to split Sidebar and Content */
-.container {
-    display: flex;
-    min-height: 100vh;
+header p {
+  margin: 0;
+  color: #E0E7FF;
 }
 
-/* Sticky Sidebar styling */
-.sidebar {
-    width: 250px;
-    background-color: #ffffff;
-    padding: 40px 20px;
-    border-right: 1px solid #eee;
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    box-sizing: border-box;
+header nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
 }
 
-.sidebar h2 {
-    margin-top: 0;
-    font-size: 20px;
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
 }
 
-.sidebar ul {
-    list-style: none;
-    padding: 0;
+header nav a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
 }
 
-.sidebar li {
-    margin: 15px 0;
+main {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 32px 24px;
 }
 
-.sidebar a {
-    color: #0076ff;
-    text-decoration: none;
-    font-weight: 500;
+.card, section {
+  background: white;
+  padding: 24px;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
 }
 
-/* Main Content and Sections styling */
-.content {
-    flex: 1;
-    padding: 40px;
-    max-width: 800px;
-    margin-left: 20px;
+h2 {
+  color: #1E3A8A;
+  margin-top: 0;
+  border-bottom: 2px solid #E5E7EB;
+  padding-bottom: 8px;
 }
 
-section {
-    background: #ffffff;
-    padding: 30px;
-    margin-bottom: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+h3 {
+  color: #2563EB;
+  margin-bottom: 4px;
 }
 
-section h2 {
-    margin-top: 0;
-    border-bottom: 2px solid #0076ff;
-    padding-bottom: 10px;
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
 }
 
-.container > a {
-    flex-shrink: 0;
-    min-width: 150px;
+.skills-list li {
+  background: #EEF2FF;
+  color: #1E3A8A;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-weight: 500;
+  font-size: 0.95rem;
 }
 
-.container a img {
-    width: 100%;
-    height: auto;
-    display: block;
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
 }
 
-/* Activity - Style Your Text */
-h1, h2 {
-    color: #2563eb;
+input,
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #D1D5DB;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
 
-h1 {
-    font-size: 2rem;
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #1E3A8A;
+  box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.2);
+}
+
+input:invalid:focus,
+textarea:invalid:focus {
+  border-color: #DC2626;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.2);
+}
+
+button {
+  padding: 10px 20px;
+  background: #1E3A8A;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background: #16296B;
+}
+
+footer {
+  text-align: center;
+  padding: 32px 20px;
+  color: #6B7280;
+  border-top: 1px solid #E5E7EB;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #1E3A8A;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  main {
+    padding: 16px;
+  }
 }
