@@ -101,3 +101,24 @@ h1, h2 {
 h1 {
     font-size: 2rem;
 }
+
+input:focus {
+    outline: 2px solid;
+}
+
+section#contact {
+    box-sizing : border-box;
+    padding : 20px;
+    border : #333;
+    border-radius : 5px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
