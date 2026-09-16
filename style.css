@@ -75,3 +75,19 @@ section h2 {
     height: auto;
     display: block;
 }
+
+
+/* Activity - Style Your Text */
+
+body {
+    font-family: "Segoe UI", Roboto, sans-serif;
+    line-height: 1.5;
+}
+
+h1, h2 {
+    color: #2563eb;
+}
+
+h1 {
+    font-size: 2rem;
+}
