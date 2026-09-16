@@ -70,6 +70,15 @@ main {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
 }
 
+section#contact {
+  box-sizing: border-box;
+  padding: 24px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
 h2 {
   color: #1E3A8A;
   margin-top: 0;
@@ -104,6 +113,12 @@ h3 {
   flex-direction: column;
   gap: 6px;
   margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 4px;
 }
 
 input,
