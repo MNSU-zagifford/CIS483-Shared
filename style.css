@@ -6,6 +6,12 @@ body {
     color: #333;
 }
 
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 /* Flex Container to split Sidebar and Content */
 .container {
     display: flex;
