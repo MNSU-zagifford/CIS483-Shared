@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Kirubel Dula - Profile</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
     <header>
         <h1>Kirubel Dula</h1>
         <p>Computer Information Technology & Health Informatics Student</p>
@@ -21,8 +24,10 @@
     </header>
 
     <main>
+
         <section id="about">
             <h2>About</h2>
+
             <p>
                 I am a student at Minnesota State University, Mankato,
                 majoring in Computer Information Technology and Health
@@ -34,6 +39,7 @@
 
         <section id="skills">
             <h2>Skills</h2>
+
             <ul>
                 <li>HTML/CSS</li>
                 <li>Information Technology</li>
@@ -45,6 +51,7 @@
 
         <section id="experience">
             <h2>Experience</h2>
+
             <p>
                 I have experience working on technology projects,
                 web development assignments, and business projects.
@@ -55,6 +62,7 @@
             <h2>Contact</h2>
 
             <form action="/submit" method="post">
+
                 <label for="name">Full Name:</label>
                 <input type="text" id="name" name="name" required>
                 <br>
@@ -64,22 +72,31 @@
                 <br>
 
                 <label for="phone">Phone Number:</label>
-                <input type="text" id="phone" name="phone"
-                       pattern="^\d{3}-\d{3}-\d{4}$">
+                <input
+                    type="text"
+                    id="phone"
+                    name="phone"
+                    pattern="^\d{3}-\d{3}-\d{4}$">
                 <br>
 
                 <label for="message">Message:</label>
-                <textarea id="message" name="message"
-                          placeholder="Enter your message here..."></textarea>
+                <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Enter your message here..."></textarea>
                 <br>
 
                 <button type="submit">Submit</button>
+
             </form>
         </section>
+
     </main>
 
     <footer>
         <p>&copy; 2026 Kirubel Dula. All rights reserved.</p>
     </footer>
+
 </body>
+
 </html>
