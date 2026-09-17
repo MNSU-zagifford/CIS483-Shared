@@ -1,9 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyanka Chaudhary | Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
     <header>
-        <h1>Priyanka Chaudhary</h1>
-        <p>Computer Information Technology Student</p>
+        <div>
+            <h1>Priyanka Chaudhary</h1>
+            <p>Computer Information Technology Student</p>
+        </div>
         <nav>
             <ul>
+                <li><a href="index.html">Team</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -11,14 +22,22 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <section id="about"><h2>About</h2>
+        <section id="about">
+            <h2>About</h2>
             <p>
-                I am a Senior Computer Information Technology student at Minnesota State University, Mankato, with an interest in web development and software engineering. I enjoy working with different programming languages and technologies to create useful and creative solutions. I am always looking for opportunities to learn new skills, improve my knowledge, and work on projects that make a positive impact in the technology field.
+                I am a Senior Computer Information Technology student at Minnesota State University, Mankato,
+                with an interest in web development and software engineering. I enjoy working with different
+                programming languages and technologies to create useful and creative solutions. I am always
+                looking for opportunities to learn new skills, improve my knowledge, and work on projects that
+                make a positive impact in the technology field.
             </p>
         </section>
-        <section id="skills"><h2>Skills</h2>
-            <ul>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul class="skills-list">
                 <li>Python</li>
                 <li>JavaScript</li>
                 <li>HTML/CSS</li>
@@ -26,6 +45,7 @@
                 <li>Networking</li>
             </ul>
         </section>
+
         <section id="experience">
             <h2>Experience</h2>
             <ul>
@@ -33,42 +53,43 @@
                 <li>Freelance Web Developer (2022-Present)</li>
                 <li>IT Support Specialist at ABC Corporation (2021-2022)</li>
             </ul>
-            
-               
         </section>
+
         <section id="contact">
             <h2>Contact</h2>
-            <form action ="/submit" method = "post">
-                <label for = "name"> 
-                 Full Name:
-                </label>
-                <input type="text" id = "name" name = "name" required>
-                <br>
-                <label for = "email">
-                    Email:
-                </label>
-                <input type = "email" id = "email" name = "email" required>
-                <br>
-                <label for = "phone">
-                    Phone Number:
-                </label>
-                <input type = "text" id = "phone" name = "phone number" pattern = "^\d{3}-\d{3}-\d{4}$" optional>
-                <br>
-                <label for = "message">
-                    Message:
-                </label>
-                <textarea id = "message" name = "message" placeholder="Enter your message here..."></textarea>
-                <br>
-                <button type = "submit">Submit</button>
+            <form>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" autocomplete="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number (optional)</label>
+                    <input type="tel" id="phone" name="phone" placeholder="507-555-1234"
+                           pattern="\d{3}-\d{3}-\d{4}" title="Use the format 507-555-1234">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Enter your message here..."></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
             </form>
         </section>
-        <section>
-            <footer>
-                <p>Socials:</p>
-                <ul>
-                    <a href="https://github.com/priyankachaudhary77" target="_blank" rel="noopener noreferrer"><img src = images\github-logo.png alt = "Github" height = 50 width = 50> </a>
-                </ul>
-                <p>&copy; 2026 Priyanka Chaudhary. All rights reserved.</p>
-            </footer>
-        </section>
-</main>
+    </main>
+
+    <footer>
+        <p>Socials:</p>
+        <a href="https://github.com/priyankachaudhary77" target="_blank" rel="noopener noreferrer">
+            <img src="images/github-logo.png" alt="Priyanka's GitHub profile" width="50" height="50">
+        </a>
+        <p>&copy; 2026 Priyanka Chaudhary. All rights reserved.</p>
+    </footer>
+</body>
+</html>
